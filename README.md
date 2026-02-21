@@ -1,5 +1,4 @@
-# Circle M Deli Waste Tracker + Tomorrow Planner (MVP v1.3 - waste-only, no extra inputs)
-
+# Waste Tracker
 This version matches your instruction exactly:
 - You only **enter waste**.
 - Dashboard shows waste KPIs + charts.
@@ -23,49 +22,4 @@ This gives a **rough count** without asking staff to enter anything except waste
 
 ---
 
-## Prerequisites (Windows)
 
-Install:
-- Python 3.11+
-- Node.js LTS
-- VS Code
-
-Verify:
-```powershell
-python --version
-node --version
-npm --version
-```
-
----
-
-## Run backend
-
-```powershell
-cd backend
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
-
-Seed demo data:
-```powershell
-python -m app.seed
-```
-
-API docs:
-- http://127.0.0.1:8000/docs
-
----
-
-## Run frontend
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend:
-- http://127.0.0.1:5173
